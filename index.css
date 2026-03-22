@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tiktok-black: #010101;
+  --color-tiktok-darkgray: #121212;
+  --color-tiktok-gray: #2F2F2F;
+  --color-tiktok-cyan: #25F4EE;
+  --color-tiktok-pink: #FE2C55;
+  --color-tiktok-white: #FFFFFF;
+  --color-tiktok-text-gray: #8A8B91;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-tiktok-black);
+    color: var(--color-tiktok-white);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+/* Custom scrollbar for some areas if needed */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-tiktok-gray);
+  border-radius: 4px;
+}
